@@ -1,0 +1,55 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<div class="container text-center bg-warning post-wrapper" style="padding: 20px; margin-bottom: 10px;">
+
+    <div class="container">
+        <h2>My one min pitch</h2>
+        <p>This is a testing pitch</p>
+    </div>
+
+    <div class="votes-wrapper" style="padding: 10px;">
+        <div class="row">
+
+            <div class="col-2 other">
+                <button type="button" class="btn btn-info">Upvote</button>
+            </div>
+            
+            <div class="col-2 other">
+                <button type="button" class="btn btn-danger">Downvote</button>
+            </div>
+        
+            <div class="col-2 votes">
+                <div class="value">
+                    <p><span>{{ votes }}</span> votes</p>
+                </div>
+            </div>
+        
+        </div>
+    </div>   
+</div>
+
+<!-- <div class="container form-input">
+    <h2>Add your Post</h2>
+    <form action="" method="post">
+            
+            <div class="form-group input-collection">
+                {{form.title.label(class="form-control-lable")}}
+                {{form.title(class="form-control")}}
+            </div>
+
+            <div class="form-group input-collection">
+                {{form.content.label(class="form-control-label")}}
+                {{form.content(class="form-control")}}
+            </div>
+    </div>
+</div>
+
+        <div class="cart-button text-center">
+            {{form.submit(class="btn btn-warning text-light post-btn")}}
+        </div>
+    </form> -->
+</div>
+
+
+{% endblock %}
